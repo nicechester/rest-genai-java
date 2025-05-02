@@ -1,0 +1,5 @@
+spring.application.name: rest-mistral-ai
+llm:
+  model:
+    path: models/mistral-7b-instruct-v0.2.Q3_K_M.gguf
+    ngpu: 43
