@@ -1,6 +1,7 @@
-# rest-mistral-ai (Java)
+# rest-jenai-java
 
-Java based RESTful API for interacting with the Mistral AI Model.  (Or any other model supported by java-llama-cpp)
+Java based RESTful API using a LLM Model loaded locally based on java-llama-cpp and Spring framework.
+There's no other service needed and it's self contained as long as you have downloaded a model in gguf format which supported by llama.cpp.
 
 ## Model
 
