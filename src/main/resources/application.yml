@@ -1,4 +1,4 @@
-spring.application.name: rest-mistral-ai
+spring.application.name: rest-genai-java
 llm:
   model:
     path: models/mistral-7b-instruct-v0.2.Q3_K_M.gguf

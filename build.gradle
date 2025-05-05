@@ -50,7 +50,7 @@ dependencies {
 
 group = 'io.github.nicechester'
 version = '0.0.1-SNAPSHOT'
-description = 'rest-mistral-ai'
+description = 'rest-genai-java'
 java.sourceCompatibility = JavaVersion.VERSION_23
 
 publishing {

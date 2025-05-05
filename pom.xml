@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.github.nicechester</groupId>
-	<artifactId>rest-mistral-ai</artifactId>
+	<artifactId>rest-genai-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rest-mistral-ai</name>
-	<description>RESTful API of Mistral AI Model</description>
+	<name>rest-genai-java</name>
+	<description>RESTful API of Gen AI Model</description>
 	<url/>
 	<licenses>
 		<license/>
