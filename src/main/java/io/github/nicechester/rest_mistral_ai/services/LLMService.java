@@ -17,9 +17,8 @@ public class LLMService {
     public LLMService(@Value("${llm.model.path}") String modelPath,
                       @Value("${llm.model.ngpu}") int ngpuLayers) {
         log.info("Loading model from path: {}", modelPath);
-        String path = getClass().getClassLoader().getResource(modelPath).getPath();
         ModelParameters modelParams = new ModelParameters()
-                .setModelFilePath(path)
+                .setModelFilePath(modelPath)
                 .setNGpuLayers(ngpuLayers);
         this.model = new LlamaModel(modelParams);
     }
