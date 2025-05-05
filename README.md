@@ -55,9 +55,9 @@ To build and run the application in a Docker container, use the following comman
 
 ```bash
 # Build the Docker image
-docker build -t rest-mistral-ai .
+docker build -t rest-genai-java .
 # Run the Docker container
-docker run -p 8080:8080 rest-mistral-ai
+docker run -p 8080:8080 rest-genai-java
 ```
 
 `Dockerfile` assumes the model is in the `models` directory. If you want to use a different model, you can modify the `Dockerfile` to copy your model into the container.
