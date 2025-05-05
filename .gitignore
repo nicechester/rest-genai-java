@@ -6,4 +6,5 @@ target/
 *.ipr
 *.log
 .mvn
-/src/main/resources/models
+models
+.java-version
