@@ -6,5 +6,6 @@ target/
 *.ipr
 *.log
 .mvn
+.gradle
 models
 .java-version
