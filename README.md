@@ -1,6 +1,6 @@
-# rest-mistral-ai
+# rest-mistral-ai (Java)
 
-RESTful API for interacting with the Mistral AI Model.
+Java based RESTful API for interacting with the Mistral AI Model.  (Or any other model supported by java-llama-cpp)
 
 ## Model
 
