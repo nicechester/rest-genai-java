@@ -34,6 +34,20 @@ llm:
     ngpu: 43
 ```
 
+## Run example
+
+```
+$ curl -X GET -G http://localhost:8080/api/chat --data-urlencode 'prompt="Explain me the word spring with 3 examples"'
+
+
+Spring is a season that marks the transition from winter to summer. It is a time when the weather begins to warm up, and nature starts to awaken from its winter slumber. Here are three examples that illustrate the concept of spring:
+
+1. Botanical example: In the botanical world, spring is the time when many plants begin to grow and bloom. For instance, the cherry blossoms are a famous symbol of spring in Japan. These beautiful pink flowers bloom in early spring, signaling the end of winter and the beginning of new life.
+2. Geological example: Geologically, spring refers to the rise of groundwater to the surface. The meltwater from the snow and ice in the mountains eventually forms streams and rivers. The springs provide water for both irrigation and human consumption. For example, Hot Springs National Park in Arkansas is famous for its hot springs that have been used for therapeutic purposes since ancient times.
+3. Cultural example: In many cultures, spring is a time for festivals and celebrations. For instance, the Chinese New Year, which falls between late January and mid-February, marks the beginning of a new year. This is a time for family reunions, feasting, and gift-giving. Another example is the Indian festival of Holi, also known as the Festival of Colors, which celebrates the arrival of spring and the victory of good over evil. During Holi, people smear each other with colored powders and throw water balloons, creating a vibrant and joyful atmosphere.
+```
+
+
 ## Docker
 
 To build and run the application in a Docker container, use the following commands:
