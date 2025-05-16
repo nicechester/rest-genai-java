@@ -23,6 +23,12 @@ wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/
 - Maven 3.8+
 - Docker (optional for containerized deployment)
 
+## Build java application
+
+Run following command on top of source directory and `targets` directory will be created with binaries.
+```sh
+mvn clean package
+```
 
 ## Configuration
 
