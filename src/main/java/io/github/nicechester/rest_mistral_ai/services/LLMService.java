@@ -13,19 +13,23 @@ import org.springframework.stereotype.Component;
 @Component
 public class LLMService {
     private final LlamaModel model;
+    private final float temperature;
 
     public LLMService(@Value("${llm.model.path}") String modelPath,
-                      @Value("${llm.model.ngpu}") int ngpuLayers) {
+                      @Value("${llm.model.ngpu}") int ngpuLayers,
+                      @Value("${llm.model.temperature}") float temperature) {
+
         log.info("Loading model from path: {}", modelPath);
         ModelParameters modelParams = new ModelParameters()
                 .setModelFilePath(modelPath)
                 .setNGpuLayers(ngpuLayers);
+        this.temperature = temperature;
         this.model = new LlamaModel(modelParams);
     }
 
     public String infer(String prompt) {
         InferenceParameters inferParams = new InferenceParameters(prompt)
-                .setTemperature(0.7f)
+                .setTemperature(temperature)
                 .setPenalizeNl(true)
                 .setMiroStat(MiroStat.V2);
         String response = "";
