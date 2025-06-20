@@ -9,26 +9,11 @@ plugins {
 
 repositories {
     mavenLocal()
-    maven {
-        url = uri('https://nexus3.disney.com/repository/maven2-proxy-all/')
-    }
-
-    maven {
-        url = uri('https://nexus3.disney.com/repository/thirdparty/')
-    }
 
     maven {
         url = uri('https://repository.jboss.org/nexus/content/groups/public-jboss')
 
         // allowInsecureProtocol = true
-    }
-
-    maven {
-        url = uri('https://nexus3.disney.com/repository/WDPRT-master/')
-    }
-
-    maven {
-        url = uri('https://nexus3.disney.com/repository/WDPRT-latest/')
     }
 
     maven {
